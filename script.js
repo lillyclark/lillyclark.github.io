@@ -64,6 +64,18 @@ function setRandomPhoto() {
   ).src = `https://cassidoo.co/img/face${num}.jpg`;
 }
 
+function switchPhoto() {
+  document.getElementById(
+    "propic"
+  ).src = `files/spots.jpg`;
+}
+
+function switchPhotoBack() {
+  document.getElementById(
+    "propic"
+).src = `files/headshot.JPG`;
+}
+
 /* Bio Toggles */
 
 function setBioEventListener() {
@@ -79,6 +91,8 @@ function bioToggle(e) {
   bioType.style.cssText = `border-color: ${color}; color: ${color}; font-weight: bold;`;
   let bioTypeElement = document.getElementsByClassName(bioType.id)[0];
   if (bioTypeElement !== undefined) bioTypeElement.classList.add("show");
+  if (bioType.id == "more") switchPhoto();
+  if (bioType.id != "more") switchPhotoBack();
 }
 
 function off(bioType) {
