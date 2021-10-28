@@ -1,1 +1,67 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lilly Clark</title>
+    <meta
+      name="description"
+      content="Lilly Clark"
+    />
+    <meta charset="utf-8"/>
+
+    <!-- Favicon/theme -->
+<!-- <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"> -->
+<!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+<!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+<!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header-section">
+        <div class="header-frame">
+          <h1>Lilly Clark</h1>
+          <h2>PhD Candidate at USC</h2>
+        </div>
+        <div class="img-frame">
+          <img id="propic" src="files/headshot.JPG" alt="" />
+        </div>
+      </div>
+      <div class="links">
+        <a href="http://anrg.usc.edu">anrg</a>
+        <!--a href=" ">contact</a-->
+      </div>
+      <div class="bio-switcher">
+        <div class="toggler">
+          <button id="short" class="show">Short</button>
+          <button id="long">Long</button>
+        </div>
+        <div class="bio short show">
+            I'm Lilly!
+        </div>
+        <div class="bio long">
+            I'm Lilly Clark!
+        </div>
+
+      </div>
+
+      <div class="dark-mode-toggler">
+        <input type="checkbox" id="toggler" />
+        <label for="toggler" aria-label="Toggler for Dark Mode"></label>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+  </body>
+</html>
