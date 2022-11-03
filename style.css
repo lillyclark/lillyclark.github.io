@@ -181,9 +181,13 @@ a:hover {
 .toggler {
   margin: 25px 0;
 }
-.toggler .show {
+/* .toggler .show {
   border-color: #eb4888;
   color: #eb4888;
+} */
+.toggler .show {
+  border-color: #0099DC;
+  color: #0099DC;
 }
 @media (max-width: 600px) {
   .toggler {

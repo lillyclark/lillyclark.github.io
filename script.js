@@ -9,7 +9,9 @@
 
 // camera lens
 //let colors = ["blue", "yellow", "rosa", "gray"];
-let colors = ["#0099DC", "#FFA500", "#FF446B", "#4A4A4D"];
+// let colors = ["#0099DC", "#FFA500", "#FF446B", "#4A4A4D"];
+let colors = ["#0099DC"];
+
 
 (function() {
   setModeEventListener();
@@ -86,7 +88,7 @@ function setBioEventListener() {
 
 function bioToggle(e) {
   let bioType = e.target;
-  let color = getRandomColor();
+  let color = "#0099DC"; //getRandomColor();
   off(bioType);
   bioType.style.cssText = `border-color: ${color}; color: ${color}; font-weight: bold;`;
   let bioTypeElement = document.getElementsByClassName(bioType.id)[0];
