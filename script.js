@@ -59,13 +59,6 @@ function setColorHoverListener() {
 
 /* Photos */
 
-function setRandomPhoto() {
-  let num = Math.floor(Math.random() * 14) + 1;
-  document.getElementById(
-    "propic"
-  ).src = `https://cassidoo.co/img/face${num}.jpg`;
-}
-
 function switchPhoto() {
   document.getElementById(
     "propic"
@@ -75,7 +68,7 @@ function switchPhoto() {
 function switchPhotoBack() {
   document.getElementById(
     "propic"
-).src = `files/headshot.JPG`;
+).src = `files/2023headshot_zoomed.jpg`;
 }
 
 /* Bio Toggles */
